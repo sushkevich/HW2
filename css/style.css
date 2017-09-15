@@ -1,0 +1,99 @@
+body {
+    font-size: 0;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    font-family: "Segoe UI Light", serif;
+}
+
+p {
+    text-indent: 40px;
+    margin-bottom: -1em;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a[target="_blank"]:after {
+    content: '\21E7';
+    margin-left: 5px;
+    color: red;
+
+}
+
+span {
+    background-color: white;
+    display: block;
+    opacity: 1.0;
+    z-index: 1000;
+}
+
+.x {
+    position: absolute;
+    z-index: -1000;
+    padding-right: 20px;
+}
+
+li {
+    list-style-type: none;
+}
+
+.main::before {
+    content: '\27A4';
+    margin-right: 5px;
+    color: red;
+    width: 20px;
+    display: inline-block;
+}
+
+.about::before {
+    content: attr(data-title);
+    margin-right: 5px;
+    color: red;
+    width: 20px;
+    display: inline-block;
+    text-align: center;
+}
+
+.contacts::before {
+    content: '\2706';
+    margin-right: 5px;
+    color: red;
+    width: 20px;
+    display: inline-block;
+    text-align: center;
+}
+
+.facebook::before {
+    content: attr(data-title);
+    margin-right: 5px;
+    color: red;
+    width: 20px;
+    display: inline-block;
+    text-align: center;
+}
+
+.leftblock {
+    font-size: 18px;
+    background-color: #222222;
+    box-sizing: border-box;
+    width: 20%;
+    height: 100%;
+    float: left;
+
+}
+
+.rightblock {
+    font-size: 18px;
+    box-sizing: border-box;
+    width: 80%;
+    height: 100%;
+    float: right;
+    padding: 0 20px;
+}
+
+.rightblock span:not(:target) {
+    display: none;
+}
